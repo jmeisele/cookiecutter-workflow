@@ -34,13 +34,13 @@ jobs:
         run: |
           pip3 install cookiecutter
 
-      - name: Cookiecutter Populate
-        run: |
-          '${{ inputs.choice }}' == 'Training Pipeline' && echo "Training Pipeline"
-          '${{ inputs.choice }}' == 'Deploy ML Lambda Function' && echo "Deploy ML Lambda Function"
-          '${{ inputs.choice }}' == 'Deploy ML Webserver' && echo "Deploy ML Webserver"
-          '${{ inputs.choice }}' == 'Deploy ML Batch Process' && echo "Deploy ML Batch Process"
-          '${{ inputs.choice }}' == 'Feature Store' && echo "Feature Store"
+      # - name: Cookiecutter Populate
+      #   run: |
+      #     '${{ inputs.choice }}' == 'Training Pipeline' && echo "Training Pipeline"
+      #     '${{ inputs.choice }}' == 'Deploy ML Lambda Function' && echo "Deploy ML Lambda Function"
+      #     '${{ inputs.choice }}' == 'Deploy ML Webserver' && echo "Deploy ML Webserver"
+      #     '${{ inputs.choice }}' == 'Deploy ML Batch Process' && echo "Deploy ML Batch Process"
+      #     '${{ inputs.choice }}' == 'Feature Store' && echo "Feature Store"
 
       - name: Greet
         id: greet
