@@ -1,0 +1,25 @@
+name: Create Repo
+
+on:
+  workflow_dispatch:
+    inputs:
+      choice:
+        type: choice
+        description: Type of Repo
+        options:
+          - Training Pipeline
+          - Deploy ML Lambda Function
+          - Deploy ML Webserver
+          - Deploy ML Batch Process
+          - Feature Store
+
+jobs:
+  create-repo:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Greet
+        id: greet
+        run: |
+          echo "choice is ${{ github.event.inputs.choice}}" / ${{ inputs.choice }}
