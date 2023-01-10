@@ -38,8 +38,8 @@ jobs:
         run: |
           if [[ '${{ inputs.choice }}' == 'Training Pipeline' ]]; then echo "Training Pipeline"; fi
           if [[ '${{ inputs.choice }}' == 'Deploy ML Lambda Function' ]]; then echo "Deploy ML Lambda Function"; fi
-          if [[ '${{ inputs.choice }}' == 'Deploy ML Webserver' ]]; then echo "Deploy ML Webserver": fi
-          if [[ '${{ inputs.choice }}' == 'Deploy ML Batch Process' ]]; then echo "Deploy ML Batch Process": fi
+          if [[ '${{ inputs.choice }}' == 'Deploy ML Webserver' ]]; then echo "Deploy ML Webserver"; fi
+          if [[ '${{ inputs.choice }}' == 'Deploy ML Batch Process' ]]; then echo "Deploy ML Batch Process"; fi
           if [[ '${{ inputs.choice }}' == 'Feature Store' ]]; then echo "Feature Store"; fi
 
       - name: Greet
