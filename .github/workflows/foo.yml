@@ -20,6 +20,7 @@ on:
           - Deploy ML Webserver
           - Deploy ML Batch Process
           - Feature Store
+          - Blank Repo
 
 jobs:
   create-repo:
