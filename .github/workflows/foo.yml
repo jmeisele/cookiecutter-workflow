@@ -15,10 +15,11 @@ on:
         type: choice
         description: Type of Repo
         options:
-          - Training Pipeline
+          - ML Training Pipeline
           - Deploy ML Lambda Function
           - Deploy ML Webserver
           - Deploy ML Batch Process
+          - Deploy ML Streaming Process
           - Feature Store
           - Blank Repo
 
